@@ -1,0 +1,398 @@
+<div class="nav flex justify-content-around flex-wrap">
+    <span id="logo">
+        Abdulrahim Shaikh
+    </span>
+    <div class="grid">
+        <div class="col">
+            <a href="#about">
+                <p-button label="About" [text]="true" severity="secondary"></p-button>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#skills">
+                <p-button label="Skills" [text]="true" severity="secondary"></p-button>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#experience">
+                <p-button label="Experience" [text]="true" severity="secondary"></p-button>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#projects">
+                <p-button label="Projects" [text]="true" severity="secondary"></p-button>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#contact">
+                <p-button label="Contact" [text]="true" severity="secondary"></p-button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="about"></div>
+
+<div class="container">
+    <div pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" class="grid animation-duration-1000">
+        <div class="col flex justify-content-center flex-wrap">
+            <img id="profile" src="assets/1709196768375_7.jpg" alt="profile">
+        </div>
+        <div id="profileInfo" class="col">
+            <div class="text-600"><strong>Hello I'm</strong></div>
+            <h1 id="name">Abdulrahim Shaikh</h1>
+            <div class="text-600">
+                <h2 id="title">Software Developer</h2>
+            </div>
+            <div class="btn-container">
+                <p-button (click)="downloadCV()" label="Download CV" iconPos="right" [outlined]="true" [rounded]="true" severity="secondary"></p-button>
+                <a href="#contact">
+                    <p-button label="Contact info" [rounded]="true" severity="secondary"></p-button>
+                </a>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/abdulrahim-shaikh-a4689525a/">
+                    <p-button title="LinkedIn" icon="pi pi-linkedin" [rounded]="true" severity="secondary"></p-button>
+                </a>
+                <a href="https://github.com/sgtPepper109">
+                    <p-button title="GitHub" icon="pi pi-github" [rounded]="true" severity="secondary"></p-button>
+                </a>
+                <a href="https://leetcode.com/knight_32">
+                    <p-button title="LeetCode" icon="assets/leetcode.svg" [rounded]="true" severity="secondary">
+                        <img id="imgIcon" alt="logo" src="assets/leetcode.svg" />
+                    </p-button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="skills"></div>
+
+<div class="divider">
+    <p-divider align="center">
+        <span>
+            <span class="p-tag">Skills</span>
+        </span>
+    </p-divider>
+</div>
+
+<div class="skillsSection flex justify-content-center flex-wrap">
+    <div pAnimateOnScroll enterClass="fadeinleft" leaveClass="fadeoutleft" class="skillsContainer animation-duration-2000 animation-ease-in-out">
+        <div>
+            <div class="grid">
+                <div class="col">
+                    <p-fieldset legend="Front-End">
+                        <div class="flex gap-2 flex-wrap">
+                            <p-chip label="Angular">
+                                <img id="chipIcon" alt="logo" src="assets/angular.svg" />
+                            </p-chip>
+                            <p-chip label="TypeScript">
+                                <img id="imgIcon" alt="logo" src="assets/Typescript_logo_2020.svg" />
+                            </p-chip>
+                            <p-chip label="JavaScript">
+                                <img id="imgIcon" alt="logo" src="assets/javascript-1.svg" />
+                            </p-chip>
+                            <p-chip label="HTML5">
+                                <img id="imgIcon" alt="logo" src="assets/HTML5_Badge.svg" />
+                            </p-chip>
+                            <p-chip label="CSS3">
+                                <img id="imgIcon" alt="logo" src="assets/CSS3_logo.svg" />
+                            </p-chip>
+                            <p-chip label="Node.js">
+                                <img id="imgIcon" alt="logo" src="assets/node-js.svg" />
+                            </p-chip>
+                            <p-chip label="jQuery">
+                                <img id="imgIcon" alt="logo" src="assets/jquery-4.svg" />
+                            </p-chip>
+                            <p-chip label="Bootstrap">
+                                <img id="imgIcon" alt="logo" src="assets/bootstrap.svg" />
+                            </p-chip>
+                            <p-chip label="Angular Material">
+                                <img id="imgIcon" alt="logo" src="assets/material.svg" />
+                            </p-chip>
+                            <p-chip label="Material UI">
+                                <img id="imgIcon" alt="logo" src="assets/material-ui-1.svg" />
+                            </p-chip>
+                            <p-chip label="Tailwind CSS">
+                                <img id="imgIcon" alt="logo" src="assets/Tailwind_CSS_Logo.svg" />
+                            </p-chip>
+                            <p-chip label="PrimeNG">
+                                <img id="imgIcon" alt="logo" src="assets/_presskit_primeng-logo.svg" />
+                            </p-chip>
+                            <p-chip label="PrimeFlex">
+                                <img id="imgIcon" alt="logo" src="assets/_presskit_primeng-logo-black.svg" />
+                            </p-chip>
+                        </div>
+                    </p-fieldset>
+                </div>
+                <div class="col">
+                    <p-fieldset legend="Back-End">
+                        <div class="flex gap-2 flex-wrap">
+                            <p-chip label="Java">
+                                <img id="imgIcon" alt="logo" src="assets/java.svg" />
+                            </p-chip>
+                            <p-chip label="Spring Boot">
+                                <img id="imgIcon" alt="logo" src="assets/Spring_Boot.svg" />
+                            </p-chip>
+                            <p-chip label="Spring Security">
+                                <img id="imgIcon" alt="logo" src="assets/springboot-custom.svg" />
+                            </p-chip>
+                            <p-chip label="JWT">
+                                <img id="imgIcon" alt="logo" src="assets/jwt-3.svg" />
+                            </p-chip>
+                            <p-chip label="Microservices">
+                                <img id="imgIcon" alt="logo" src="assets/microservice-icon.svg" />
+                            </p-chip>
+                            <p-chip label="JPA">
+                                <img id="imgIcon" alt="logo" src="assets/data.svg" />
+                            </p-chip>
+                            <p-chip label="Hibernate ORM">
+                                <img id="imgIcon" alt="logo" src="assets/hibernate.svg" />
+                            </p-chip>
+                            <p-chip label="ASP .NET Core Web API">
+                                <img id="imgIcon" alt="logo" src="assets/NET_Core_Logo.svg" />
+                            </p-chip>
+                            <p-chip label="ASP .NET Core Web MVC">
+                                <img id="imgIcon" alt="logo" src="assets/NET_Core_Logo.svg" />
+                            </p-chip>
+                            <p-chip label="Python">
+                                <img id="imgIcon" alt="logo" src="assets/python.svg" />
+                            </p-chip>
+                            <p-chip label="Flask">
+                                <img id="imgIcon" alt="logo" src="assets/flask.svg" />
+                            </p-chip>
+                            <p-chip label="Git">
+                                <img id="imgIcon" alt="logo" src="assets/git.svg" />
+                            </p-chip>
+                            <p-chip label="MySQL">
+                                <img id="imgIcon" alt="logo" src="assets/Antu_mysql-workbench.svg" />
+                            </p-chip>
+                            <p-chip label="Microsoft SQL Server">
+                                <img id="imgIcon" alt="logo" src="assets/microsoft-sql-server-logo.svg" />
+                            </p-chip>
+                            <p-chip label="PostgreSQL">
+                                <img id="imgIcon" alt="logo" src="assets/Postgresql_elephant.svg" />
+                            </p-chip>
+                        </div>
+                    </p-fieldset>
+                </div>
+                <div class="col">
+                    <p-fieldset legend="Miscellaneous">
+                        <div class="flex gap-2 flex-wrap">
+                            <p-chip label="Data Structures and Algorithms">
+                                <img id="imgIcon" alt="logo" src="assets/data-structure-1.svg" />
+                            </p-chip>
+                            <p-chip label="Object Oriented Programming">
+                                <img id="imgIcon" alt="logo" src="assets/oop.svg" />
+                            </p-chip>
+                            <p-chip label="SDLC">
+                                <img id="imgIcon" alt="logo" src="assets/circular-arrows-svgrepo-com.svg" />
+                            </p-chip>
+                            <p-chip label="HTTP">
+                                <img id="imgIcon" alt="logo" src="assets/http-domain.svg" />
+                            </p-chip>
+                            <p-chip label="REST">
+                                <img id="chipIcon" alt="logo" src="assets/rest.svg" />
+                            </p-chip>
+                            <p-chip label="RESTful APIs">
+                                <img id="imgIcon" alt="logo" src="assets/api.svg" />
+                            </p-chip>
+                            <p-chip label="JSON">
+                                <img id="imgIcon" alt="logo" src="assets/json.svg" />
+                            </p-chip>
+                            <p-chip label="PostMan">
+                                <img id="imgIcon" alt="logo" src="assets/postman.svg" />
+                            </p-chip>
+                            <p-chip label="SonarQube">
+                                <img id="imgIcon" alt="logo" src="assets/sonarqube.svg" />
+                            </p-chip>
+                            <p-chip label="Debugging">
+                                <img id="imgIcon" alt="logo" src="assets/debugging.svg" />
+                            </p-chip>
+                            <p-chip label="Highcharts">
+                                <img id="imgIcon" alt="logo" src="assets/highcharts.svg" />
+                            </p-chip>
+                            <p-chip label="Powershell">
+                                <img id="imgIcon" alt="logo" src="assets/powershell.svg" />
+                            </p-chip>
+                            <p-chip label="vi">
+                                <img id="imgIcon" alt="logo" src="assets/vim.svg" />
+                            </p-chip>
+                            <p-chip label="C">
+                                <img id="imgIcon" alt="logo" src="assets/c.svg" />
+                            </p-chip>
+                            <p-chip label="C++">
+                                <img id="imgIcon" alt="logo" src="assets/cpp.svg" />
+                            </p-chip>
+                            <p-chip label="Typing (99 wpm)">
+                                <img id="imgIcon" alt="logo" src="assets/keyboard.svg" />
+                            </p-chip>
+                        </div>
+                    </p-fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="experience"></div>
+
+<div class="divider">
+    <p-divider align="center" type="solid">
+        <span>
+            <span class="p-tag">Experience</span>
+        </span>
+    </p-divider>
+</div>
+
+<div class="experienceSection flex justify-content-center flex-wrap">
+    <div pAnimateOnScroll enterClass="fadeinright" leaveClass="fadeoutright" class="experienceContainer animation-duration-2000 animation-ease-in-out">
+        <div>
+            <div>
+                <p-timeline [value]="events" align="alternate">
+                    <ng-template pTemplate="marker" let-event>
+                        <span>
+                            <p-avatar [image]="event.icon" styleClass="mr-2" size="xlarge"></p-avatar>
+                        </span>
+                    </ng-template>
+                    <ng-template pTemplate="content" let-event>
+                        <p-card [header]="event.status" [subheader]="event.company">
+                            <div id="points">
+                                <ul>
+                                    <li *ngFor="let point of event.points">{{point}}</li>
+                                </ul>
+                            </div>
+                        </p-card>
+                    </ng-template>
+                </p-timeline>
+            </div>
+        </div>
+    </div>
+    <div class="educationContainer">
+        <div class="divider">
+            <p-divider align="center">
+                <span class="p-tag">Education</span>
+            </p-divider>
+        </div>
+        <div pAnimateOnScroll enterClass="zoomin" leaveClass="fadeout" class="animation-duration-1000">
+            <div>
+                <p-timeline [value]="eds">
+                    <ng-template pTemplate="content" let-event>
+                        <h3 class="p-text-secondary">{{ event.date }}</h3>
+                    </ng-template>
+                    <ng-template pTemplate="marker" let-event>
+                        <span>
+                            <p-avatar [image]="event.icon" styleClass="mr-2" size="xlarge"></p-avatar>
+                        </span>
+                    </ng-template>
+                    <ng-template class="" pTemplate="opposite" let-event>
+                        <h2>
+                            {{ event.status }}
+                        </h2>
+                    </ng-template>
+                </p-timeline>
+                <div pAnimateOnScroll enterClass="zoomin" leaveClass="fadeout" class="flex justify-content-center flex-wrap animation-duration-3000">
+                    <strong id="cgpaText">CGPA: 8.61 / 10</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="projects"></div>
+
+<div class="divider">
+    <p-divider align="center">
+        <span>
+            <span class="p-tag">Projects</span>
+        </span>
+    </p-divider>
+</div>
+
+<div class="projectsSection flex justify-content-center flex-wrap">
+    <div pAnimateOnScroll enterClass="scalein" leaveClass="fadeout" class="projectsContainer animation-duration-3000 animation-ease-in-out">
+        <div class="flex justify-content-center gap-7 flex-wrap">
+            <p-card header="Web application - Traffic Intensity prediction and congestion treatment recommendation"
+                [style]="{ width: '360px' }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/graph.jpg" />
+                </ng-template>
+                <div class="flex justify-content-center flex-wrap">
+                    <a href="https://github.com/sgtPepper109/2023_MIT_PROJECT.git">
+                        <p-button label="GitHub" icon="pi pi-external-link"></p-button>
+                    </a>
+                </div>
+            </p-card>
+            <p-card header="JWT Implementation with Angular - Spring Boot and Angular - ASP .NET Core Web API"
+                [style]="{ width: '360px' }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/jwt_card.jpg" />
+                </ng-template>
+                <div class="flex justify-content-center flex-wrap">
+                    <p-menu [style]="{ width: '500px' }" #jwtlinks [model]="jwtLinkItems" [popup]="true"></p-menu>
+                    <p-button label="GitHub" (click)="jwtlinks.toggle($event)" icon="pi pi-external-link"></p-button>
+                </div>
+            </p-card>
+            <p-card header="Online Web Chat Application using HTML, CSS, Node.js, JavaScript and MySQL"
+                [style]="{ width: '360px' }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/chat.jpg" />
+                </ng-template>
+                <div class="flex justify-content-center flex-wrap">
+                    <a href="https://github.com/sgtPepper109/chat.git">
+                        <p-button label="GitHub" icon="pi pi-external-link"></p-button>
+                    </a>
+                </div>
+            </p-card>
+            <p-card header="Road Detection from Satellite Images using Deep Learning Techniques on HPC Platform"
+                [style]="{ width: '360px' }">
+                <ng-template pTemplate="header">
+                    <img alt="Card" src="assets/Road-Detection-illustation.jpg" />
+                </ng-template>
+                <div class="flex justify-content-center flex-wrap">
+                    <a href="https://github.com/sgtPepper109/finalProject.git">
+                        <p-button label="GitHub" icon="pi pi-external-link"></p-button>
+                    </a>
+                </div>
+            </p-card>
+        </div>
+    </div>
+</div>
+
+<div id="contact"></div>
+
+<div>
+    <div id="footer">
+        <div id="footerIinner" class="surface-100 border-round flex align-items-center justify-content-center">
+            <div id="footerContent">
+                <div class="flex justify-content-between flex-wrap">
+                    <div class="flex align-items-center justify-content-center">
+                        <h1>Abdulrahim Shaikh</h1>
+                    </div>
+                    <div class="flex align-items-center justify-content-center">
+                        <div class="flex justify-content-center flex-wrap gap-3 mb-4">
+                            <p-toast></p-toast>
+                            <p-menu #menu [model]="phoneCopyItems" [popup]="true"></p-menu>
+                            <p-menu [style]="{ width: '320px' }" #menu2 [model]="emailCopyItems" [popup]="true"></p-menu>
+                            <a href="https://maps.app.goo.gl/3EZyFosr33sdZ6m58">
+                                <p-button icon="pi pi-map-marker" title="Al Wizarat, Riyadh, Saudi Arabia (Abdulrahim's Location)" [rounded]="true" severity="primary" [outlined]="true"></p-button>
+                            </a>
+                            <p-button icon="pi pi-phone" (click)="menu.toggle($event)" [rounded]="true" severity="success" [outlined]="true"></p-button>
+                            <p-button icon="pi pi-envelope" (click)="menu2.toggle($event)" [rounded]="true" severity="danger" [outlined]="true"></p-button>
+                            <a href="https://www.linkedin.com/in/abdulrahim-shaikh-a4689525a/">
+                                <p-button icon="pi pi-linkedin" [rounded]="true" severity="primary" [outlined]="true"></p-button>
+                            </a>
+                            <a href="https://github.com/sgtPepper109">
+                                <p-button icon="pi pi-github" [rounded]="true" severity="secondary" [outlined]="true"></p-button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-content-center flex-wrap gap-5" style="padding-top: 40px;">
+                    Copyright {{'\u00A9'}} 2024 Abdulrahim Shaikh
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
