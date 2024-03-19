@@ -70,7 +70,7 @@ export class HomeComponent implements OnInit {
   downloadCV(): void {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', 'http://localhost:4200/assets/abdulrahimresume_.pdf');
+    link.setAttribute('href', 'http://localhost:4200/assets/abdulrahim_resume_se.pdf');
     link.setAttribute('download', `abdulrahim_shaikh_resume.pdf`);
     document.body.appendChild(link);
     link.click();
