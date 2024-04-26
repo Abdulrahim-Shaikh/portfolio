@@ -24,8 +24,15 @@ export class HomeComponent implements OnInit {
     ];
     this.events = [
       {
+        status: 'Software Engineer / Data Analyst',
+        company: ' APSLOG Tech - July 2023 to present',
+        date: 'July 2023 to present',
+        icon: 'assets/apslog.jpeg',
+        points: [ ]
+      },
+      {
         status: 'Project Engineer',
-        company: 'Centre for Development of Advanced Computing (C-DAC)',
+        company: 'Centre for Development of Advanced Computing (C-DAC) - January 2023 to July 2023',
         date: 'January 2023 to July 2023',
         icon: 'assets/cdac.jpeg',
         points: [
@@ -41,7 +48,7 @@ export class HomeComponent implements OnInit {
       },
       {
         status: 'Lead Research and Development Engineer',
-        company: 'Centre for Development of Advanced Computing (C-DAC)',
+        company: 'Centre for Development of Advanced Computing (C-DAC) - July 2022 to January 2023',
         date: 'July 2022 to January 2023',
         icon: 'assets/cdac.jpeg',
         points: [
