@@ -1,1 +1,86 @@
-<router-outlet></router-outlet>
+<div class="outer flex justify-content-center flex-wrap">
+  <app-page></app-page>
+</div>
+
+<div class="bg-blue-500" style="min-height: 150px;">
+  <div class="flex justify-content-between flex-wrap">
+    <div class="flex align-items-center justify-content-center bg-primary font-bold m-3">
+      <span><i class="sacramento-regular">Abdulrahim Shaikh | Abdulrahim Shaikh</i></span>
+    </div>
+    <div class="flex align-items-center justify-content-center m-2">
+      <div>
+        <a href="https://maps.app.goo.gl/xoywYHyyxEFTPsgYA">
+          <p-button icon="pi pi-globe" label="Residence" [text]="true" [style]="{color: 'white'}"></p-button>
+        </a>
+        <a (click)="showNationalityDialog()">
+          <p-button icon="pi pi-flag-fill" label="Nationality" [text]="true" [style]="{color: 'white'}"></p-button>
+        </a>
+        <p-dialog header="Nationality" [(visible)]="nationalityDialogVisible" [style]="{width: '50vw'}"
+          [maximizable]="true">
+          <p>
+            Indian
+          </p>
+        </p-dialog>
+        <a (click)="showAgeDialog()">
+          <p-button icon="pi pi-calendar-times" label="Age" [text]="true" [style]="{color: 'white'}"></p-button>
+        </a>
+        <p-dialog header="Age" [(visible)]="ageDialogVisible" [style]="{width: '50vw'}" [maximizable]="true">
+          <div>
+            22 (Birth date: 01 Jan 2001)
+            <div>
+              <p-calendar [disabled]="true" class="max-w-full" [style]="{width: '100%'}" [(ngModel)]="date"
+                [inline]="true" [showWeek]="true"></p-calendar>
+            </div>
+          </div>
+        </p-dialog>
+        <a (click)="showEmailDialog()">
+          <p-button icon="pi pi-envelope" label="Email" [text]="true" [style]="{color: 'white'}"></p-button>
+        </a>
+        <p-dialog header="Email" [(visible)]="emailDialogVisible" [style]="{width: '50vw'}" [maximizable]="true">
+          <div>
+            <a href="mailto:abdul.rahim.shaikh.sa@gmail.com">abdul.rahim.shaikh.sa@gmail.com</a>
+          </div>
+        </p-dialog>
+        <a (click)="showPhoneDialog()">
+          <p-button icon="pi pi-phone" label="Phone" [text]="true" [style]="{color: 'white'}"></p-button>
+        </a>
+        <p-dialog header="Phone" [(visible)]="phoneDialogVisible" [style]="{width: '50vw'}" [maximizable]="true">
+          <div>
+            <div class="card">
+              <p-tabView>
+                <p-tabPanel header="Saudi Arabia">
+                  <p-tag [style]="{ 'background': 'linear-gradient(-225deg,#AC32E4 0%,#7918F2 48%,#4801FF 100%)'}">
+                    <div class="flex align-items-center gap-2">
+                      <img alt="Country" src="/assets/Flag_of_Saudi_Arabia.png" class="flag flag-it" style="width: 18px" />
+                      <span class="text-base">Saudi Arabia - +966594951370</span>
+                      <i (onClick)="copySaudiNumber()" class="copy-icon-button pi pi-copy text-xs"></i>
+                    </div>
+                  </p-tag>
+                </p-tabPanel>
+                <p-tabPanel header="India">
+                  <p-tag [style]="{ 'background': 'linear-gradient(-225deg,#AC32E4 0%,#7918F2 48%,#4801FF 100%)'}">
+                    <div class="flex align-items-center gap-2">
+                      <img alt="Country" src="/assets/Flag_of_India.png" class="flag flag-it" style="width: 18px" />
+                      <span class="text-base">India - +919370260050</span>
+                      <i (onClick)="copyIndiaNumber()" class="copy-icon-button pi pi-copy text-xs"></i>
+                    </div>
+                  </p-tag>
+                </p-tabPanel>
+              </p-tabView>
+            </div>
+          </div>
+        </p-dialog>
+        <p-toast></p-toast>
+        <a href="https://www.linkedin.com/in/abdulrahim-shaikh-a4689525a/">
+          <p-button icon="pi pi-linkedin" label="LinkedIn" [text]="true" [style]="{color: 'white'}"></p-button>
+        </a>
+        <a href="https://github.com/sgtPepper109">
+          <p-button icon="pi pi-github" label="GitHub" [text]="true" [style]="{color: 'white'}"></p-button>
+        </a>
+        <a href="https://leetcode.com/knight_32">
+          <p-button icon="pi pi-link" label="LeetCode" [text]="true" [style]="{color: 'white'}"></p-button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
