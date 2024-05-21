@@ -6,11 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainModule } from './modules/main/main.module';
-
-import { ToolbarModule } from 'primeng/toolbar';
+import { PageModule } from './page/page.module';
 import { ButtonModule } from 'primeng/button';
-import { MenuModule } from 'primeng/menu';
+import { DialogModule } from 'primeng/dialog';
+import { CalendarModule } from 'primeng/calendar';
+import { TabViewModule } from 'primeng/tabview';
+import { TagModule } from 'primeng/tag';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -21,13 +23,15 @@ import { MenuModule } from 'primeng/menu';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule,
     ReactiveFormsModule,
-    MainModule,
-
-    ToolbarModule,
+    HttpClientModule,
+    PageModule,
     ButtonModule,
-    MenuModule,
+    DialogModule,
+    CalendarModule,
+    TabViewModule,
+    TagModule,
+    ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]
