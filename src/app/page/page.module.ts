@@ -17,6 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EducationComponent } from './education/education.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { SummaryComponent } from './summary/summary.component';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { ProjectsComponent } from './projects/projects.component';
     SkillsComponent,
     EducationComponent,
     PublicationsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SummaryComponent
   ],
   imports: [
     FormsModule,
@@ -41,6 +44,7 @@ import { ProjectsComponent } from './projects/projects.component';
     BadgeModule,
     ChipModule,
     RatingModule,
+    FieldsetModule
   ],
   exports: [
     PageComponent,
