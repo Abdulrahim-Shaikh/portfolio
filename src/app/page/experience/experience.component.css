@@ -1,3 +1,35 @@
-.gap2 {
-    padding-top: 50px;
+.experience-heading {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 33px;
+}
+
+.separator {
+  height: 3px;
+  width: 50%;
+  background-color: #f97316;
+}
+
+.experience1 {
+  background-image: url('/assets/apslog.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.experience2 {
+  background-image: url('/assets/cdac.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.experience3 {
+  background-image: url('/assets/jp.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.experience-content {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

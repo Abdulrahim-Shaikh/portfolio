@@ -1,3 +1,34 @@
-.gap2 {
-    padding-top: 50px;
+.mit-image {
+    background-image: url('/assets/mit.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.education-text {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.separator {
+  height: 6px;
+  width: 25%;
+  background-color: #f97316;
+}
+
+.education-content {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .mit-image {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mit-image {
+    min-height: 250px;
+  }
 }

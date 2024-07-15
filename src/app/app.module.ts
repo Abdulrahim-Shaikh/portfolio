@@ -13,6 +13,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { TabViewModule } from 'primeng/tabview';
 import { TagModule } from 'primeng/tag';
 import { ToastModule } from 'primeng/toast';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ToastModule } from 'primeng/toast';
     CalendarModule,
     TabViewModule,
     TagModule,
-    ToastModule
+    ToastModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

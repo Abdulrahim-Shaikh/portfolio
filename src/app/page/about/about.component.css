@@ -1,0 +1,35 @@
+.about-back {
+    background-image: url('/assets/about.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+
+.about-content {
+    background-color: white;
+}
+
+.separator {
+    height: 3px;
+    width: 50%;
+    background-color: #f97316;
+}
+
+.about-content {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-wrap: wrap;
+}
+
+.about-me-text {
+    font-size: 33px;
+}
+
+
+@media (max-width: 900px) {
+    .about-content {
+        font-size: 15px;
+    }
+}

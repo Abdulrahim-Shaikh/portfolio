@@ -1,51 +1,38 @@
-<div>
-    <p-divider align="left">
-        <strong>Publications</strong>
-    </p-divider>
-</div>
-<div>
-    <div class="grid" style="padding-left: 20px; padding-right: 20px; padding-top: 10px;">
-        <div class="col-1 flex justify-content-center">
-            <p-avatar image="/assets/ijritcc_logo.jpeg" styleClass="mr-2" size="xlarge"></p-avatar>
-        </div>
-        <div class="col flex">
-            <div>
-                <div>
-                    <strong style="font-size: 17px;">Decision-Tree-based Ensemble Learning Models for Long-Term Traffic Intensity Forecasting and Analysis of Congestion Treatment Strategies</strong>
-                </div>
-                <div>
-                    <span class="text-600">
-                        <small>International Journal on Recent and Innovation Trends in Computing and Communication (IJRITCC)</small>
-                    </span>
-                </div>
-                <div>
-                    <span class="text-600">
-                        <small>2023</small>
-                    </span>
-                </div>
-            </div>
+<div id="publications" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout"
+    class="mb-5 flex flex-column justify-content-center align-items-center animation-duration-2000 animation-ease-in-out w-full">
+    <div class="publications-heading">
+        PUBLICATIONS
+        <div class="mt-4 mb-4 flex justify-content-center flex-wrap">
+            <div class="separator"></div>
         </div>
     </div>
-    <div class="grid" style="padding-left: 20px; padding-right: 20px; padding-top: 10px;">
-        <div class="col-1 flex justify-content-center">
-            <p-avatar image="/assets/springer_logo.png" styleClass="mr-2" size="xlarge"></p-avatar>
-        </div>
-        <div class="col flex">
+    <div class="publications-card flex align-content-center justify-content-between flex-wrap">
+        <form (ngSubmit)="previousPublication()" class="flex align-content-center flex-wrap">
+            <p-button type="submit" severity="secondary" size="large" icon="pi pi-angle-left" [rounded]="true" [outlined]="true"></p-button>
+        </form>
+        <div *ngIf="publications" class="flex align-content-center justify-content-center flex-wrap">
             <div>
+                <img class="w-15rem h-15rem" src="{{publications[publicationViewIndex].journalLogo}}" alt="journal" />
+            </div>
+            <div class="ml-3 paper-title flex align-content-center flex-wrap font-bold">
                 <div>
-                    <strong style="font-size: 17px;">Satellite Image Classification with Deep Learning Model ResNet</strong>
-                </div>
-                <div>
-                    <span class="text-600">
-                        <small>Neural Computing and Applications (NCAA) - Springer</small>
-                    </span>
-                </div>
-                <div>
-                    <span class="text-600">
-                        <small>2022</small>
-                    </span>
+                    <img src="/assets/icons/quote-left-solid.svg" alt="quote-left" style="width: 1rem">
+                    {{publications[publicationViewIndex].paperTitle}}
+                    <img src="/assets/icons/quote-right-solid.svg" alt="quote-right" style="width: 1rem">
+                    <div class="mt-3 w-3rem bg-orange-500" style="height:4px;"></div>
+                    <div class="mt-2">
+                        <span class="text-sm font-bold">
+                            {{publications[publicationViewIndex].journalTitle}}:
+                        </span>
+                        <span class="text-sm">
+                            {{publications[publicationViewIndex].releaseYear}}
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
+        <form (ngSubmit)="nextPublication()" class="flex align-content-center flex-wrap">
+            <p-button type="submit" severity="secondary" size="large" icon="pi pi-angle-right" [rounded]="true" [outlined]="true"></p-button>
+        </form>
     </div>
 </div>

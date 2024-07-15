@@ -1,57 +1,73 @@
-<div class="gap2">
-    <p-divider align="left">
-        <strong>Projects</strong>
-    </p-divider>
-</div>
-<div>
-    <div class="grid flex justify-content-center flex-wrap" style="padding-left: 20px; padding-right: 20px; padding-top: 10px;">
-        <div class="flex justify-content-center flex-wrap gap-7">
-            <p-card subheader="Web application - Traffic Intensity prediction and congestion treatment recommendation"
-                [style]="{ width: '360px' }">
-                <ng-template pTemplate="header">
-                    <img alt="Card" src="assets/graph.jpg" />
-                </ng-template>
-                <div class="flex justify-content-center flex-wrap">
-                    <a href="https://github.com/sgtPepper109/2023_MIT_PROJECT.git">
-                        <p-button label="GitHub" icon="pi pi-external-link"></p-button>
-                    </a>
-                </div>
-            </p-card>
-            <p-card subheader="JWT Implementation with Angular - Spring Boot"
-                [style]="{ width: '360px' }">
-                <ng-template pTemplate="header">
-                    <img alt="Card" src="assets/jwt_card.jpg" />
-                </ng-template>
-                <div class="flex justify-content-center flex-wrap">
-                    <a href="https://github.com/sgtPepper109/spring_auth_server">
-                        <p-button label="GitHub" icon="pi pi-external-link"></p-button>
-                    </a>
-                </div>
-            </p-card>
-            <p-card subheader="Online Web Chat Application using HTML, CSS, Node.js, JavaScript and MySQL"
-                [style]="{ width: '360px' }">
-                <ng-template pTemplate="header">
-                    <img alt="Card" src="assets/chat.jpg" />
-                </ng-template>
-                <div class="flex justify-content-center flex-wrap">
-                    <a href="https://github.com/sgtPepper109/chat.git">
-                        <p-button label="GitHub" icon="pi pi-external-link"></p-button>
-                    </a>
-                </div>
-            </p-card>
+<div id="projects" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" class="mb-5 flex flex-column justify-content-center align-items-center animation-duration-2000 animation-ease-in-out w-full">
+  <div class="projects-heading">
+    PROJECTS
+    <div class="mt-4 mb-4 flex justify-content-center flex-wrap">
+      <div class="separator"></div>
+    </div>
+  </div>
+  <div class="flex justify-content-center flex-wrap gap-4">
+    <div class="bg-white project-card max-w-26rem">
+      <div class="card-half">
+        <img src="/assets/project1.webp" alt="project 1" />
+      </div>
+      <div class="card-half p-5 flex align-content-center flex-wrap">
+        <div class="block project-title font-bold text-2xl">
+          Web Application Design and Development of Traffic Intensity Forecasting and Congestion Treatment Recommendation
         </div>
+        <div class="block pt-4">
+          <a href="https://github.com/sgtPepper109/2023_MIT_PROJECT">
+            <button class="cta">
+              <span>Learn more</span>
+              <svg width="15px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="grid flex justify-content-center flex-wrap gap-7" style="padding-left: 20px; padding-right: 20px; padding-top: 10px;">
-        <p-card subheader="Road Detection from Satellite Images using Deep Learning Techniques on HPC Platform"
-                [style]="{ width: '360px' }">
-                <ng-template pTemplate="header">
-                    <img alt="Card" src="assets/roads.jpg" />
-                </ng-template>
-                <div class="flex justify-content-center flex-wrap">
-                    <a href="https://github.com/sgtPepper109/finalProject.git">
-                        <p-button label="GitHub" icon="pi pi-external-link"></p-button>
-                    </a>
-                </div>
-            </p-card>
+    <div class="bg-white project-card max-w-26rem">
+      <div class="card-half p-5 flex align-content-center flex-wrap">
+        <div class="block project-title font-bold text-2xl">
+          Road Detection from Satellite Images using Machine Learning and Data Analytics on HPC Platform
+        </div>
+        <div class="block pt-4">
+          <a href="https://github.com/sgtPepper109/finalProject.git">
+            <button class="cta">
+              <span>Learn more</span>
+              <svg width="15px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="card-half">
+        <img src="/assets/project2.webp" alt="project 2" />
+      </div>
     </div>
+    <div class="bg-white project-card max-w-26rem">
+      <div class="card-half">
+        <img src="/assets/chat.jpg" alt="project 3" />
+      </div>
+      <div class="card-half p-5 flex align-content-center flex-wrap">
+        <div class="block project-title font-bold text-2xl">
+          Online Web Chat Application
+        </div>
+        <div class="block pt-4">
+          <a href="https://github.com/sgtPepper109/chat.git">
+            <button class="cta">
+              <span>Learn more</span>
+              <svg width="15px" height="10px" viewBox="0 0 13 10">
+                <path d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
