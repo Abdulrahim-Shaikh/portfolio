@@ -1,3 +1,27 @@
-.gap2 {
-    padding-top: 50px;
+.publications-heading {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 33px;
+}
+
+.separator {
+  height: 3px;
+  width: 50%;
+  background-color: #f97316;
+}
+
+.titles {
+  text-wrap: wrap;
+}
+
+.publications-card {
+  width: 65%;
+}
+
+.paper-title {
+  width: 65%;
+  font-size: 13px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* For older browsers */
+  white-space: normal;
 }

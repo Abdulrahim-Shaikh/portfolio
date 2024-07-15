@@ -1,3 +1,18 @@
-.gap2 {
-    padding-top: 50px;
+.skills-heading {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 33px;
+}
+
+.separator {
+  height: 3px;
+  width: 50%;
+  background-color: #f97316;
+}
+
+.skill-text {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img {
+  filter: invert(47%) sepia(97%) saturate(1683%) hue-rotate(352deg) brightness(101%) contrast(95%);
 }

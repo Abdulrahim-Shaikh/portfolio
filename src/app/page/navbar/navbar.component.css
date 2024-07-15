@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #1b262c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar-title {
+    color: #f5f8dc;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sidebar-text {
+    cursor: default;
+}
+
+.menu-option {
+    cursor: pointer;
+}
+
+.menu-option:hover {
+    border: 1px solid #f5f8dc;
+    color: #f5f8dc;
+    background-color: #1b262c;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

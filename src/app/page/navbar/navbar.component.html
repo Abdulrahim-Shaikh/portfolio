@@ -1,0 +1,47 @@
+<div id="navbar" class="navbar p-0 m-0 flex justify-content-between flex-wrap h-6rem w-full">
+    <div class="navbar-title p-2 m-2 flex align-items-center justify-content-center flex-wrap text-5xl">
+        Abdulrahim Shaikh
+    </div>
+    <div class="p-2 m-2 flex align-items-center justify-content-center flex-wrap text-5xl gap-3">
+        <form (ngSubmit)="sidebarVisible = true">
+            <p-button type="submit" icon="pi pi-bars" [outlined]="true" severity="warning"></p-button>
+        </form>
+    </div>
+</div>
+
+<p-sidebar [(visible)]="sidebarVisible" position="right">
+    <ng-template pTemplate="header">
+        <span class="sidebar-text text-sm pl-2">
+            Menu
+        </span>
+    </ng-template>
+    <hr />
+    <ng-template pTemplate="content">
+      <a href="#home">
+        <div class="menu-option block font-bold text-start p-2 border-round mb-1">Home</div>
+      </a>
+      <a href="#about">
+        <div class="menu-option block font-bold text-start p-2 border-round mb-1">About</div>
+      </a>
+      <a href="#experience">
+        <div class="menu-option block font-bold text-start p-2 border-round mb-1">Experience</div>
+      </a>
+      <a href="#skills">
+        <div class="menu-option block font-bold text-start p-2 border-round mb-1">Skills</div>
+      </a>
+      <a href="#education">
+        <div class="menu-option block font-bold text-start p-2 border-round mb-1">Education</div>
+      </a>
+      <a href="#projects">
+        <div class="menu-option block font-bold text-start p-2 border-round mb-1">Projects</div>
+      </a>
+      <a href="#contact">
+        <div class="menu-option block font-bold text-start p-2 border-round mb-1">Contact</div>
+      </a>
+    </ng-template>
+    <ng-template pTemplate="footer">
+        <span class="sidebar-text">
+            Abdulrahim Shaikh
+        </span>
+    </ng-template>
+</p-sidebar>

@@ -1,94 +1,84 @@
-<div>
-    <p-divider align="left">
-        <strong>Skills</strong>
-    </p-divider>
-</div>
-
-<div>
-    <div style="padding-left: 20px; padding-right: 20px; padding-top: 10px;">
-        <div class="grid">
-            <div class="col flex justify-content-center flex-wrap">
-                <span class="flex gap-3">
-                    <i>Angular - Frontend</i>
-                    <p-rating [(ngModel)]="angularSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>HTML, CSS</i>
-                    <p-rating [(ngModel)]="htmlCssSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>Java, Spring Boot, JPA</i>
-                    <p-rating [(ngModel)]="javaSpringBootSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>RDBMS - SQL</i>
-                    <p-rating [(ngModel)]="rdbmsSqlSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>Git, GitHub</i>
-                    <p-rating [(ngModel)]="gitGithubSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>APIs - REST, JSON</i>
-                    <p-rating [(ngModel)]="apiSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>Data Structures and Algorithms</i>
-                    <p-rating [(ngModel)]="dsaSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>Object Oriented Programming</i>
-                    <p-rating [(ngModel)]="oopSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>C/C++</i>
-                    <p-rating [(ngModel)]="cppSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>Python</i>
-                    <p-rating [(ngModel)]="pythonSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>SDLC</i>
-                    <p-rating [(ngModel)]="sdlcSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-            <div class="col flex justify-content-center flex-wrap gap-3">
-                <span class="flex gap-3">
-                    <i>Python Data Analysis</i>
-                    <p-rating [(ngModel)]="pythonDataAnalysisSkillRating" [readonly]="true" [cancel]="false" [stars]="6"></p-rating>
-                </span>
-            </div>
-        </div>
+<div id="skills" pAnimateOnScroll enterClass="fadein" leaveClass="fadeout" class="mb-5 flex flex-column justify-content-center align-items-center animation-duration-2000 animation-ease-in-out w-full">
+  <div class="skills-heading">
+    SKILLS
+    <div class="mt-4 mb-4 flex justify-content-center flex-wrap">
+      <div class="separator"></div>
     </div>
+  </div>
+  <div class="mt-3 w-full">
+    <div class="xl:pb-8 lg:pb-8 flex justify-content-evenly flex-wrap">
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/angular.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">Angular</span>
+        </p-button>
+      </div>
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/java.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">Java</span>
+        </p-button>
+      </div>
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/springboot.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">Spring Boot</span>
+        </p-button>
+      </div>
+    </div>
+    <div class="lg:pb-8 flex justify-content-evenly flex-wrap">
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/code-solid.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">HTML, CSS</span>
+        </p-button>
+      </div>
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/database-solid.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">RDBMS SQL</span>
+        </p-button>
+      </div>
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/python.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">Python</span>
+        </p-button>
+      </div>
+    </div>
+    <div class="xl:pb-8 lg:pb-8 flex justify-content-evenly flex-wrap">
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/github.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">Git, GitHub</span>
+        </p-button>
+      </div>
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/http.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">REST APIs, HTTP, JSON</span>
+        </p-button>
+      </div>
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/chart-simple-solid.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">Data Structures and Algorithms</span>
+        </p-button>
+      </div>
+    </div>
+    <div class="xl:pb-8 lg:pb-8 flex justify-content-evenly flex-wrap">
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/object-group-solid.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">Object Oriented Programming</span>
+        </p-button>
+      </div>
+      <div>
+        <p-button [text]="true">
+          <img alt="logo" src="/assets/icons/c-solid.svg" style="width: 1.5rem" />
+          <span class="ml-3 text-xl skill-text text-black-alpha-90 font-bold">C/C++</span>
+        </p-button>
+      </div>
+    </div>
+  </div>
 </div>

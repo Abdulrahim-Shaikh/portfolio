@@ -1,50 +1,52 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PageComponent } from './page.component';
-import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { DividerModule } from 'primeng/divider';
-import { StepsModule } from 'primeng/steps';
-import { IntroductionComponent } from './introduction/introduction.component';
-import { ExperienceComponent } from './experience/experience.component';
 import { RippleModule } from 'primeng/ripple';
-import { AvatarModule } from 'primeng/avatar';
-import { BadgeModule } from 'primeng/badge';
-import { SkillsComponent } from './skills/skills.component';
-import { ChipModule } from 'primeng/chip';
-import { RatingModule } from 'primeng/rating';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarModule } from 'primeng/sidebar';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
-import { PublicationsComponent } from './publications/publications.component';
+import { TagModule } from 'primeng/tag';
+import { SkillsComponent } from './skills/skills.component';
+import { DropdownModule } from 'primeng/dropdown';
 import { ProjectsComponent } from './projects/projects.component';
-import { SummaryComponent } from './summary/summary.component';
-import { FieldsetModule } from 'primeng/fieldset';
+import { PublicationsComponent } from './publications/publications.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ContactComponent } from './contact/contact.component';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
     PageComponent,
-    IntroductionComponent,
+    NavbarComponent,
+    HomeComponent,
+    AboutComponent,
     ExperienceComponent,
-    SkillsComponent,
     EducationComponent,
-    PublicationsComponent,
+    SkillsComponent,
     ProjectsComponent,
-    SummaryComponent
+    PublicationsComponent,
+    ContactComponent,
   ],
   imports: [
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    CardModule,
     ButtonModule,
     DividerModule,
-    StepsModule,
     RippleModule,
-    AvatarModule,
-    BadgeModule,
-    ChipModule,
-    RatingModule,
-    FieldsetModule
+    SidebarModule,
+    AnimateOnScrollModule,
+    TagModule,
+    DropdownModule,
+    CarouselModule,
+    InputTextModule
   ],
   exports: [
     PageComponent,
