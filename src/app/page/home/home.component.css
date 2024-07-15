@@ -6,36 +6,6 @@
   min-height: 700px;
 }
 
-.name {
-  color: #f5f8dc;
-  font-size: 7vw;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.designation {
-  color: #f5f8dc;
-  font-size: 5vw;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.name-designation-separator {
-  height: 8px;
-  width: 50%;
-  background-color: #f97316;
-}
-
-@media (max-width: 900px) {
-  .home-div {
-    min-height: 350px;
-  }
-  .name-designation-separator {
-    height: 5px;
-  }
-}
-
-
-
-/*works janky on mobile :<*/
 .container {
   position: relative;
   width: 190px;
