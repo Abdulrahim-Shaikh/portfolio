@@ -20,6 +20,8 @@ import { PublicationsComponent } from './publications/publications.component';
 import { CarouselModule } from 'primeng/carousel';
 import { ContactComponent } from './contact/contact.component';
 import { InputTextModule } from 'primeng/inputtext';
+import {DialogModule} from "primeng/dialog";
+import {AvatarModule} from "primeng/avatar";
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { InputTextModule } from 'primeng/inputtext';
     TagModule,
     DropdownModule,
     CarouselModule,
-    InputTextModule
+    InputTextModule,
+    DialogModule,
+    AvatarModule
   ],
   exports: [
     PageComponent,

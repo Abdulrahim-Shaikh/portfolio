@@ -6,7 +6,21 @@
     </div>
   </div>
   <div class="pt-4 flex justify-content-center align-content-center flex-wrap gap-6">
-    <div class="experience-card border-bottom-3 border-orange-500 pt-4 pb-4 flex flex-column justify-content-center align-content-center flex-wrap w-22rem bg-gray-200">
+    <div (click)="experience1dialog=!experience1dialog" class="cursor-pointer experience-card border-bottom-3 border-orange-500 pt-4 pb-4 flex flex-column justify-content-center align-content-center flex-wrap w-22rem bg-gray-200">
+      <div class="experience3 border-circle h-15rem w-15rem"> </div>
+      <div class="pt-4 experience-content flex justify-content-center flex-wrap text-xl">
+        <strong>
+          Technas Solution | RAM Clinics
+        </strong>
+      </div>
+      <div class="pt-2 experience-content flex justify-content-center flex-wrap text-lg">
+        Software Engineer
+      </div>
+      <div class="experience-content flex justify-content-center flex-wrap text-lg">
+        February 2024 to Present
+      </div>
+    </div>
+    <div (click)="experience2dialog=!experience2dialog" class="cursor-pointer experience-card border-bottom-3 border-orange-500 pt-4 pb-4 flex flex-column justify-content-center align-content-center flex-wrap w-22rem bg-gray-200">
       <div class="experience2 border-circle h-15rem w-15rem"> </div>
       <div class="pt-4 experience-content flex justify-content-center flex-wrap text-xl">
         <strong>
@@ -20,19 +34,156 @@
         January 2023 to June 2023
       </div>
     </div>
-    <div class="experience-card border-bottom-3 border-orange-500 pt-4 pb-4 flex flex-column justify-content-center align-content-center flex-wrap w-22rem bg-gray-200">
-      <div class="experience3 border-circle h-15rem w-15rem"> </div>
-      <div class="pt-4 experience-content flex justify-content-center flex-wrap text-xl">
-        <strong>
-          JP Morgan & Chase Co.
-        </strong>
-      </div>
-      <div class="pt-2 experience-content flex justify-content-center flex-wrap text-lg">
-        Software Engineer Virtual Intern
-      </div>
-      <div class="experience-content flex justify-content-center flex-wrap text-lg">
-        July 2021 to September 2021
-      </div>
-    </div>
   </div>
 </div>
+
+<p-dialog [modal]="true" [visible]="experience1dialog" [showHeader]="false">
+  <ng-template pTemplate="headless">
+    <article class="mt-4 job-card w-full h-full">
+      <div class="flex flex-row justify-content-between align-items-center flex-wrap">
+        <div class="flex flex-row justify-content-between align-content-center align-items-center flex-wrap">
+          <div>
+            <p-avatar
+              image="/assets/technas.jpg"
+              styleClass="mr-2"
+              size="xlarge"
+              shape="circle" />
+          </div>
+          <div>
+            <div class="mb-0 pb-0 w-full flex flex-row align-items-center flex-wrap">
+              <p class="text-title pb-0 mb-0">Software Engineer</p>
+            </div>
+            <p class="post-date">Technas Solution | RAM Clinics, Al Khobar Eastern, KSA</p>
+          </div>
+        </div>
+        <div>
+          <div class="cursor-pointer" (click)="experience1dialog = false"><p-avatar icon="pi pi-times" shape="circle" /></div>
+        </div>
+      </div>
+
+      <div class="budget-exp">
+        <div>
+          <p class="value">From</p>
+          <p class="label">February 2024</p>
+        </div>
+        <div>
+          <p class="value">To</p>
+          <p class="label">Present</p>
+        </div>
+        <div>
+          <p class="value">Mode</p>
+          <p class="label">On-site</p>
+        </div>
+      </div>
+
+      <ul class="list-disc">
+        <li>Spearheaded comprehensive 3 CRM modules, including Ticketing, Activity Monitoring and Sales CRM using Microservices.</li>
+        <li>Programmed a Healthcare Information System (HIS) to streamline hospital operations and improve patient care.</li>
+        <li>Worked on medical claims feature that significantly boosted company profits by millions (over 25+ million a month), optimizing the claims processing workflow.</li>
+        <li>Optimized invoice processing by enabling the submission of over 500 invoices as claims simultaneously, running them efficiently as batches.</li>
+        <li>Engineered a Patient mobile application, improving user experience and accessibility for patients in 2 weeks.</li>
+        <li>Enhanced system functionality and performance through algorithm enhancements, two-factor authentication, indexing, query refinement and optimization using Indexing, TanStack Query with mutations which cut response time from 20s to milliseconds and established integrations for REST API, SMS, Email, Push Notifications, and Amazon Payment Gateway.</li>
+        <li>Innovated user-centric system features, leading to a 90% reduction in user complaints and a significant boost in user satisfaction.</li>
+      </ul>
+
+      <div class="tags">
+        <article>
+          <p>Angular</p>
+          <p>JavaScript</p>
+          <p>Java</p>
+          <p>JAX-RS</p>
+          <p>Backend Development</p>
+          <p>Frontend Development</p>
+          <p>SQL</p>
+          <p>GIT</p>
+          <p>Atlassian</p>
+          <p>OOP</p>
+          <p>SDLC</p>
+        </article>
+      </div>
+
+      <div class="cursor-auto">
+        <button class="card-btn cursor-auto">Full-time</button>
+      </div>
+    </article>
+  </ng-template>
+</p-dialog>
+<p-dialog [modal]="true" [visible]="experience2dialog" [showHeader]="false">
+  <ng-template pTemplate="headless">
+    <article class="mt-4 job-card w-full h-full">
+      <div class="flex flex-row justify-content-between align-items-center flex-wrap">
+        <div class="flex flex-row gap-3 justify-content-between align-content-center align-items-center flex-wrap">
+          <div>
+            <p-avatar
+              image="/assets/download.jpeg"
+              size="xlarge"
+              shape="circle" />
+          </div>
+          <div>
+            <div class="mb-0 pb-0 w-full flex flex-row align-items-center flex-wrap">
+              <p class="text-title pb-0 mb-0">Software Engineer</p>
+            </div>
+            <p class="post-date">C-DAC, Pune, India</p>
+          </div>
+        </div>
+        <div>
+          <div class="cursor-pointer" (click)="experience2dialog = false"><p-avatar icon="pi pi-times" shape="circle" /></div>
+        </div>
+      </div>
+
+      <div class="budget-exp">
+        <div>
+          <p class="value">From</p>
+          <p class="label">July 2022</p>
+        </div>
+        <div>
+          <p class="value">To</p>
+          <p class="label">July 2023</p>
+        </div>
+        <div>
+          <p class="value">Mode</p>
+          <p class="label">On-site</p>
+        </div>
+      </div>
+
+      <ul class="list-disc">
+        <li>Led an R&D project as an intern, collaborating with the CDAC PARAM Supercomputer in Pune to detect roads from satellite images using High-Performance Computing (HPC) - Project 1.</li>
+        <li>Constructed a custom dataset, explored various algorithms, authored a research paper, and achieved an accuracy of 97%.</li>
+        <li>Pioneered a web application for traffic intensity prediction, performing data analysis and full-stack development using Angular and Java - Project 2.</li>
+        <li>Demonstrated expertise in Data analysis, full-stack development, data structures, machine learning, and research domains with 150+ problems solved on LeetCode.</li>
+        <li>Managed 5+ successful releases and development cycles using Git, Jira, Bitbucket and Confluence. Expanded expertise in server-side development, mastering key concepts such as routing, middleware, authentication, and coding standards, leveraging SonarQube and Jenkins to improve code quality by 100%.</li>
+        <li>Enhanced system functionality and performance through algorithm enhancements, two-factor authentication, indexing, query refinement and optimization using Indexing, TanStack Query with mutations which cut response time from 20s to milliseconds and established integrations for REST API, SMS, Email, Push Notifications, and Amazon Payment Gateway.</li>
+        <li>Worked through the entire SDLC and authored a research paper on project findings, contributing to industry knowledge.</li>
+      </ul>
+
+      <div class="tags">
+        <article>
+          <p>Angular</p>
+          <p>JavaScript</p>
+          <p>Java</p>
+          <p>Spring Boot</p>
+          <p>Backend Development</p>
+          <p>Frontend Development</p>
+          <p>SQL</p>
+          <p>GIT</p>
+          <p>OOP</p>
+          <p>SDLC</p>
+          <p>Python</p>
+          <p>Flask</p>
+          <p>Machine Learning</p>
+          <p>Research</p>
+        </article>
+      </div>
+
+      <div class="cursor-auto">
+        <button class="card-btn cursor-auto">Full-time Internship</button>
+      </div>
+    </article>
+  </ng-template>
+</p-dialog>
+
+
+
+
+
+
